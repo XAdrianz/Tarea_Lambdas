@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class ejerciciosPalabras {
 
-    // 2. El Filtro Selectivo
+    // 2
     public static void elFiltroSelectivo(ArrayList<String> cadenas, String letraInicio, int longitudMenor) {
         if (cadenas == null || letraInicio == null) return;
         String letraMinuscula = letraInicio.toLowerCase();
@@ -15,7 +15,7 @@ public class ejerciciosPalabras {
                 s.length() < longitudMenor);
     }
 
-    // 3. Conversor de Mayúsculas
+    // 3
     public static ArrayList<String> convertirMayusculas(List<String> cadenas) {
         if (cadenas == null) return new ArrayList<>();
         return cadenas.stream()
@@ -24,7 +24,7 @@ public class ejerciciosPalabras {
                 .collect(Collectors.toCollection(ArrayList::new));
     }
 
-    // 5. Mapa de Longitudes
+    // 5
     public static Map<String, Integer> mapaDeLongitudes(List<String> cadenas) {
         if (cadenas == null) return new HashMap<>();
         return cadenas.stream()
@@ -36,7 +36,7 @@ public class ejerciciosPalabras {
                 ));
     }
 
-    // 6. Modificador de Inventario
+    // 6
     public static void modificadorDeInventario(Map<String, Double> inventario) {
         if (inventario == null) return;
         inventario.forEach((producto, precio) -> {
@@ -47,7 +47,7 @@ public class ejerciciosPalabras {
         });
     }
 
-    // 7. Contador de Frecuencias
+    // 7
     public static Map<String, Integer> contarFrecuencias(List<String> palabras) {
         Map<String, Integer> mapaFrecuencias = new HashMap<>();
         if (palabras == null) return mapaFrecuencias;
@@ -60,7 +60,7 @@ public class ejerciciosPalabras {
         return mapaFrecuencias;
     }
 
-    // 8. Clasificador de Palabras
+    // 8
     public static ArrayList<String> clasificarPalabrasPorFrecuencia(Map<String, Integer> frecuencias, int frecuenciaMinima) {
         if (frecuencias == null) return new ArrayList<>();
         return frecuencias.entrySet().stream()
@@ -69,19 +69,19 @@ public class ejerciciosPalabras {
                 .collect(Collectors.toCollection(ArrayList::new));
     }
 
-    // 9. Deduplicación de Palabras
-    public static Set<String> deduplicacionDePalabras(String frase, int minLongitud) {
+    // 9.
+    public static Set<String> deduplicacionDePalabras(String frase, int minimaLongitud) {
         if (frase == null || frase.trim().isEmpty()) return new HashSet<>();
         return Arrays.stream(frase.split("\\s+"))
                 .map(p -> p.replaceAll("[^a-zA-ZáéíóúÁÉÍÓÚñÑ]", ""))
-                .filter(p -> !p.isEmpty() && p.length() >= minLongitud)
+                .filter(p -> !p.isEmpty() && p.length() >= minimaLongitud)
                 .map(String::toLowerCase)
                 .collect(Collectors.toSet());
     }
 
-    // 10. Limitar Frecuencias
-    public static void limitarFrecuencias(Map<String, Integer> frecuencias, int maximoN) {
+    // 10
+    public static void limitarFrecuencias(Map<String, Integer> frecuencias, int maximoNumero) {
         if (frecuencias == null) return;
-        frecuencias.replaceAll((palabra, frec) -> (frec != null && frec > maximoN) ? maximoN : frec);
+        frecuencias.replaceAll((palabra, frec) -> (frec != null && frec > maximoNumero) ? maximoNumero : frec);
     }
 }

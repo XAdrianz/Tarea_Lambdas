@@ -8,13 +8,13 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class ejerciciosNumeros {
-    // 1. El Multiplicador
+    // 1
     public static void elMultiplicador(List<Integer> numeros, int factor) {
         if (numeros == null) return;
         numeros.replaceAll(n -> n != null ? n * factor : null);
     }
 
-    // 4. Cuadrados Únicos
+    // 4
     public static Set<Integer> cuadradosUnicos(ArrayList<Integer> numeros) {
         if (numeros == null) return new HashSet<>();
         return numeros.stream()
