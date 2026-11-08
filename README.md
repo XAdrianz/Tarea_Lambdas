@@ -34,73 +34,52 @@ Escribe un método estático que dado un HashMap<String, Integer> de palabras y 
 -------------------------------------------------
 Prueba 1: El Multiplicador
 -------------------------------------------------
-Caso normal con elemento null - Antes:  [1, 2, 3, 4, 5, null]
-Caso normal con elemento null - Después: [3, 6, 9, 12, 15, null]
-Caso borde - Ejecutando
-Caso borde - Completado.
-
+Caso normal- Antes:  [1, 2, 3, 4, 5, null]
+Caso normal- Después: [3, 6, 9, 12, 15, null]
 -------------------------------------------------
 Prueba 4: Cuadrados Unicos
 -------------------------------------------------
-Caso normal con duplicados y null - Original: [2, 3, 4, 2, 6, 4, 5, 8, null]
+Caso normal con duplicados- Original: [2, 3, 4, 2, 6, 4, 5, 8, null]
 Resultado [16, 64, 4, 36]
-Caso borde - Resultado: []
-
 -------------------------------------------------
 Prueba 2: El Filtro Selectivo 
 -------------------------------------------------
-Caso normal con nulls - Antes: [hola, java, Stream, a, sol, algoritmo, null]
-Caso normal con nulls - Después: [hola, java, Stream, sol]
-Caso borde - Ejecutando
-Caso borde - Completado
-
+Caso normal - Antes: [hola, java, Stream, a, sol, algoritmo, null]
+Caso normal - Después: [hola, java, Stream, sol]
 -------------------------------------------------
 Prueba 3: Conversor de Mayusculas
 -------------------------------------------------
-Caso normal con elemento null - Antes: [código, lambda, java, null]
+Caso normal - Antes: [código, lambda, java, null]
 Resultado [CÓDIGO, LAMBDA, JAVA]
-Caso borde (Colección null) - Resultado: []
-
 -------------------------------------------------
 Prueba 5: Mapa de Longitudes 
 -------------------------------------------------
-Caso normal con duplicado y null - Lista: [Java, Streams, Lambda, Java, null]
+Caso normal con duplicado- Lista: [Java, Streams, Lambda, Java, null]
 Resultado : {Java=4, Lambda=6, Streams=7}
-Caso borde - Resultado: {}
-
 -------------------------------------------------
 Prueba 6: Modificador de Inventario
 -------------------------------------------------
-Caso normal con valor null - Inventario Original: {Laptop=1200.0, Mouse=25.0, Teclado=45.0, SinPrecio=null}
+Caso normal - Inventario Original: {Laptop=1200.0, Mouse=25.0, Teclado=45.0, SinPrecio=null}
 Salida de modificadorDeInventario:
 El producto es: Laptop Su precio original es: 1200.0 Su precio con descuento es 1080.0
 El producto es: Mouse Su precio original es: 25.0 Su precio con descuento es 22.5
 El producto es: Teclado Su precio original es: 45.0 Su precio con descuento es 40.5
-Caso borde - Ejecutando
-Caso borde - Completado
-
 -------------------------------------------------
 Prueba 7: Contador de Frecuencias
 -------------------------------------------------
-Caso normal con repeticiones y null - Lista: [java, python, java, c++, java, python, null]
+Caso normal con repeticiones - Lista: [java, python, java, c++, java, python, null]
 Resultado : {c++=1, python=2, java=3}
-Caso borde - Resultado: {}
-
 -------------------------------------------------
 Prueba 8: Clasificador de Palabras Por Frecuencia
 -------------------------------------------------
-Caso normal con clave y valor null - Antes: {null=10, rust=null, python=2, c++=1, java=5, go=4}
+Caso normal con clave - Antes: {null=10, rust=null, python=2, c++=1, java=5, go=4}
 Resultado: [java, go]
-Caso borde - Resultado: []
-
 -------------------------------------------------
 Prueba 9: Deduplicación de Palabras
 -------------------------------------------------
 Caso normal - Frase original: "El lenguaje Java es genial y Java permite escribir codigo Java eficiente"
 Resultado: [lenguaje, genial, codigo, java, eficiente, escribir, permite]
-Caso borde - Resultado: []
-
 -------------------------------------------------
 Prueba 10: Limitar Frecuencias 
 -------------------------------------------------
-Caso normal con valor null - Antes del tope: {spring=7, java=12, invalido=null, docker=3}
+Caso normal - Antes del tope: {spring=7, java=12, invalido=null, docker=3}
